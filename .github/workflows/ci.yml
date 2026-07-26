@@ -1,0 +1,19 @@
+name: BuildPiper Test
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Hello
+        run: echo "Hello from GitHub Actions"
+
+      - name: List Files
+        run: ls -la
